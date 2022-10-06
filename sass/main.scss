@@ -1,0 +1,40 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+$font-family-base:'Dancing Script', cursive;
+
+// colors
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+$purple: #be4e86;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "purple": $purple,
+    );
+
+    
+// Functions first
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.card{
+    @extend .bg-dark;
+    @extend .fs-5;
+    @extend .m-5;
+    @extend .p-3;
+}
+
